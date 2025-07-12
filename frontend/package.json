@@ -100,19 +100,14 @@
 
   },
 
-  "scripts": {
+"scripts": {
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject",
+  "postinstall": "test -d node_modules/face-api.js && find node_modules/face-api.js -name '*.map' -delete || echo 'face-api.js not found, skipping .map cleanup'"
+},
 
-    "start": "react-scripts start",
-
-    "build": "react-scripts build",
-
-    "test": "react-scripts test",
-
-    "eject": "react-scripts eject",
-
-    "postinstall": "find node_modules/face-api.js -name '*.map' -delete"
-
-  },
 
   "eslintConfig": {
 
