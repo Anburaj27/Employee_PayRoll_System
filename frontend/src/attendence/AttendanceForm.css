@@ -1,0 +1,88 @@
+.attendance-form {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.attendance-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #4a90e2;
+  letter-spacing: 1.2px;
+}
+
+.attendance-form input,
+.attendance-form select,
+.attendance-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0 18px 0;
+  border: 1.8px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.attendance-form input:focus,
+.attendance-form select:focus,
+.attendance-form textarea:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+.attendance-form select {
+  appearance: none;
+  background: url("data:image/svg+xml;charset=US-ASCII,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3e%3cpath%20fill='%23333'%20d='M2%200L0%202h4L2%200zM2%205l2-2H0l2%202z'/%3e%3c/svg%3e") no-repeat right 12px center / 12px 15px;
+  cursor: pointer;
+}
+
+.attendance-form textarea {
+  min-height: 80px;
+}
+
+.attendance-form button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 12px rgba(74, 144, 226, 0.4);
+}
+
+.attendance-form button:hover:not(:disabled) {
+  background-color: #357ABD;
+}
+
+.attendance-form button:disabled {
+  background-color: #9bbce4;
+  cursor: not-allowed;
+}
+
+.attendance-form p {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.attendance-form p[style*="red"] {
+  color: #e74c3c; /* error color */
+}
+
+.attendance-form p[style*="green"] {
+  color: #27ae60; /* success color */
+}

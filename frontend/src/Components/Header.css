@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+  align-items: center;
+}
+
+.user-info {
+  font-weight: bold;
+}
